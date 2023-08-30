@@ -1,4 +1,4 @@
-package petclinic
+package cuesample
 
 deployment: {
   apiVersion: "apps/v1"

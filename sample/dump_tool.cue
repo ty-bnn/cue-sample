@@ -1,4 +1,5 @@
 package cuesample
+
 import (
 	"encoding/yaml"
 	"tool/cli"

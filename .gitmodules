@@ -1,0 +1,3 @@
+[submodule "cue-pkg"]
+	path = cue-pkg
+	url = https://github.com/ty-bnn/cue-pkg.git

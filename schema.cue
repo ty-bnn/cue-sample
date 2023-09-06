@@ -19,7 +19,7 @@ import (
 		namespace: "default"
 	}
 	spec: {
-		replicas:             1
+		replicas:             2
 		revisionHistoryLimit: 3
 		selector: matchLabels: app: _config.id
 		template: {

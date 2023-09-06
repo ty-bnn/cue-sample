@@ -6,7 +6,8 @@ import (
 
 #Config: {
 	id: string
-	imageName: string
+	replicas: int & >= 2 & <= 4
+	imageName: =~"^hyasuhisa"
 	containerPort: int
 }
 
@@ -19,7 +20,7 @@ import (
 		namespace: "default"
 	}
 	spec: {
-		replicas:             1
+		replicas: _config.replicas
 		revisionHistoryLimit: 3
 		selector: matchLabels: app: _config.id
 		template: {
